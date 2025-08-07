@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive EduQuiz App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="icons8-quizlet-50.png" type="quiz-image">
+    <link rel="stylesheet" href="task3.css" />
+  </head>
+  <body>
+
+    <!-- EduQuiz Popup -->
+    <div class="setup screen active">
+      <div class="box setup-box">
+        <h2 class="title">EduQuiz</h2>
+        <div class="setup-group">
+          <h4 class="group-title">Select Category</h4>
+          <div class="categories">
+            <button class="btn cat-btn active">Programming</button>
+            <button class="btn cat-btn">History</button>
+            <button class="btn cat-btn">Mathematics</button>
+            <button class="btn cat-btn">Entertainment</button>
+          </div>
+        </div>
+        <div class="setup-group">
+          <h4 class="group-title">No. of Questions</h4>
+          <div class="numbers">
+            <button class="btn num-btn">5</button>
+            <button class="btn num-btn active">10</button>
+            <button class="btn num-btn">15</button>
+            <button class="btn num-btn">20</button>
+            <button class="btn num-btn">25</button>
+          </div>
+        </div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+    </div>
+    <!-- Quiz Popup -->
+    <div class="quiz screen">
+      <div class="box quiz-box">
+        <header class="header">
+          <h2 class="title">Quiz Application</h2>
+          <div class="timer">
+            <span class="material-symbols-rounded">timer</span>
+            <p class="time"></p>
+          </div>
+        </header>
+        <div class="main">
+          <h1 class="question"></h1>
+          <ul class="options"></ul>
+        </div>
+        <div class="footer">
+          <p class="progress"></p>
+          <button class="next-btn">
+            Next
+            <span class="material-symbols-rounded">arrow_right_alt</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Quiz Result Popup -->
+    <div class="result screen">
+      <div class="box result-box">
+        <img src="quiz-over.png" class="end-img" alt="Quiz completed"/>
+        <h2 class="title">Quiz Completed!</h2>
+        <p class="score"></p>
+        <button class="restart-btn">Try Again</button>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="questions.js"></script>
+    <script src="task3.js"></script>
+  </body>
+</html>
